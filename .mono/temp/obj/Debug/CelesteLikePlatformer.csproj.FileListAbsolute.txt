@@ -1,0 +1,9 @@
+C:\Users\Christophe\Documents\Code\Godot\3.0\CelesteLikePlatformer\.mono\temp\bin\Debug\CelesteLikePlatformer.dll
+C:\Users\Christophe\Documents\Code\Godot\3.0\CelesteLikePlatformer\.mono\temp\bin\Debug\CelesteLikePlatformer.pdb
+C:\Users\Christophe\Documents\Code\Godot\3.0\CelesteLikePlatformer\.mono\temp\obj\Debug\CelesteLikePlatformer.csproj.AssemblyReference.cache
+C:\Users\Christophe\Documents\Code\Godot\3.0\CelesteLikePlatformer\.mono\temp\obj\Debug\CelesteLikePlatformer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Christophe\Documents\Code\Godot\3.0\CelesteLikePlatformer\.mono\temp\obj\Debug\CelesteLikePlatformer.AssemblyInfoInputs.cache
+C:\Users\Christophe\Documents\Code\Godot\3.0\CelesteLikePlatformer\.mono\temp\obj\Debug\CelesteLikePlatformer.AssemblyInfo.cs
+C:\Users\Christophe\Documents\Code\Godot\3.0\CelesteLikePlatformer\.mono\temp\obj\Debug\CelesteLikePlatformer.csproj.CoreCompileInputs.cache
+C:\Users\Christophe\Documents\Code\Godot\3.0\CelesteLikePlatformer\.mono\temp\obj\Debug\CelesteLikePlatformer.dll
+C:\Users\Christophe\Documents\Code\Godot\3.0\CelesteLikePlatformer\.mono\temp\obj\Debug\CelesteLikePlatformer.pdb
