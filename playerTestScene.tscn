@@ -270,7 +270,7 @@ shape = SubResource( 11 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Player"]
 frames = SubResource( 16 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
@@ -279,11 +279,25 @@ current = true
 zoom = Vector2( 0.4, 0.4 )
 
 [node name="RayCast2dLeft" type="RayCast2D" parent="Player"]
+position = Vector2( 0, 3 )
 rotation = 1.5708
 enabled = true
 cast_to = Vector2( 0, 10 )
 
 [node name="RayCast2dRight" type="RayCast2D" parent="Player"]
+position = Vector2( 0, 3 )
+rotation = -1.5708
+enabled = true
+cast_to = Vector2( 0, 10 )
+
+[node name="RayCast2dLeftClimb" type="RayCast2D" parent="Player"]
+position = Vector2( 0, 7.2 )
+rotation = 1.5708
+enabled = true
+cast_to = Vector2( 0, 10 )
+
+[node name="RayCast2dRightClimb" type="RayCast2D" parent="Player"]
+position = Vector2( 0, 7.2 )
 rotation = -1.5708
 enabled = true
 cast_to = Vector2( 0, 10 )
