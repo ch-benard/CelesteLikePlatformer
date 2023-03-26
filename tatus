@@ -1,0 +1,59 @@
+[33mcommit 7006ffe215b72838b887500c84d1f8e9cba24223[m[33m ([m[1;36mHEAD -> [m[1;32m006-add-ghost-effect[m[33m, [m[1;32m005/adding-animations[m[33m)[m
+Author: ch-benard <ch.benard@gmail.com>
+Date:   Sun Mar 26 03:15:26 2023 +0200
+
+    (005/adding-animations) Add Jump, Run and TakeDamage animations
+
+[33mcommit 1927accc552e4bfb1fd7c11eb90b036128564e45[m[33m ([m[1;31morigin/004/wall-jumping[m[33m, [m[1;32m004/wall-jumping[m[33m)[m
+Author: ch-benard <ch.benard@gmail.com>
+Date:   Fri Mar 24 00:04:06 2023 +0100
+
+    (004/wall-jumping) Add climbing skill to player
+
+[33mcommit 97f98ffaf829bf72706dfb3cce4239a484d8eec2[m
+Author: ch-benard <ch.benard@gmail.com>
+Date:   Wed Mar 22 23:40:29 2023 +0100
+
+    (004/wall-jumping) Fix frame
+
+[33mcommit e79032644394511abe16cdb1ea9db2c634747459[m
+Author: ch-benard <ch.benard@gmail.com>
+Date:   Wed Mar 22 13:14:26 2023 +0100
+
+    (004/wall-jumping) Refactor code fot better lisibility
+
+[33mcommit 9392094def8b666715bc9ea0f7d9b403b8e5d21a[m
+Author: ch-benard <ch.benard@gmail.com>
+Date:   Tue Mar 21 23:44:46 2023 +0100
+
+    (004/wall-jumping) Adjust tilemap for nice wall jumps
+
+[33mcommit 39ad4dd20fa439f5cb37764f4853be64cc0fa088[m
+Author: ch-benard <ch.benard@gmail.com>
+Date:   Tue Mar 21 23:35:12 2023 +0100
+
+    (004/wall-jumping) Add wall jumping feature
+
+[33mcommit e9b1e0802ee71a80cdd063f0a8288df00a7cc0a9[m[33m ([m[1;31morigin/003/dashing[m[33m, [m[1;32m003/dashing[m[33m)[m
+Author: ch-benard <ch.benard@gmail.com>
+Date:   Tue Mar 21 22:03:25 2023 +0100
+
+    (003/dashing) Add dashing
+
+[33mcommit b265e11bf5ee30684b2181676d9ef6c0d1b14593[m[33m ([m[1;31morigin/002/friction-and-acceleration[m[33m, [m[1;32m002/friction-and-acceleration[m[33m)[m
+Author: ch-benard <ch.benard@gmail.com>
+Date:   Tue Mar 21 21:12:39 2023 +0100
+
+    (002/friction-and-acceleration) Add .gitignore
+
+[33mcommit a7a34203413dc0f93f97d60ef545379e8eae47a6[m
+Author: ch-benard <ch.benard@gmail.com>
+Date:   Tue Mar 21 21:02:12 2023 +0100
+
+    Add friction and acceleration
+
+[33mcommit aefdac47878407809131de8b560219a99fb30dfd[m
+Author: ch-benard <ch.benard@gmail.com>
+Date:   Tue Mar 21 20:28:32 2023 +0100
+
+    Basic movements (right, left, jump)

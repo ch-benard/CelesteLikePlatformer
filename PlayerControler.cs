@@ -24,6 +24,8 @@ public class PlayerControler : KinematicBody2D
     private float climbTimer = 5f;
     private readonly float climbTimerReset = 5f;
     private bool isInAir = false;
+    [Export]
+    public PackedScene GhostPlayerInstance;
 
     // Called when the node enters the scene tree for the first time.
     public override void _Ready()
@@ -63,6 +65,11 @@ public class PlayerControler : KinematicBody2D
 
         if (isDashing) {
             dashTimer -= delta;
+            GhostPlayer ghost = GhostPlayerInstance.Instance() as GhostPlayer;
+            Owner.AddChild(ghost);
+            ghost.GlobalPosition = this.GlobalPosition;
+            ghost.SetHValue(GetNode<AnimatedSprite>("AnimatedSprite").FlipH);
+
             if (dashTimer <= 0) {
             isDashing = false;
             velocity = new Vector2(0, 0);
