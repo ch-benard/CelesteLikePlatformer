@@ -26,10 +26,12 @@ public class PlayerControler : KinematicBody2D
     private bool isInAir = false;
     [Export]
     public PackedScene GhostPlayerInstance;
+    private AnimatedSprite animatedSprite;
 
     // Called when the node enters the scene tree for the first time.
     public override void _Ready()
     {
+        animatedSprite = GetNode<AnimatedSprite>("AnimatedSprite");
     }
 
     //  // Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -42,7 +44,7 @@ public class PlayerControler : KinematicBody2D
         if (IsOnFloor()) {
             if (Input.IsActionJustPressed("jump")) {
                 velocity.y = -jumpHeight;
-                GetNode<AnimatedSprite>("AnimatedSprite").Play("Jump");
+                animatedSprite.Play("Jump");
                 isInAir = true;
             } else {
                     isInAir = false;
@@ -68,7 +70,7 @@ public class PlayerControler : KinematicBody2D
             GhostPlayer ghost = GhostPlayerInstance.Instance() as GhostPlayer;
             Owner.AddChild(ghost);
             ghost.GlobalPosition = this.GlobalPosition;
-            ghost.SetHValue(GetNode<AnimatedSprite>("AnimatedSprite").FlipH);
+            ghost.SetHValue(animatedSprite.FlipH);
 
             if (dashTimer <= 0) {
             isDashing = false;
@@ -112,24 +114,24 @@ public class PlayerControler : KinematicBody2D
         if (Input.IsActionPressed("ui_left"))
         {
             direction --;
-            GetNode<AnimatedSprite>("AnimatedSprite").FlipH = true;
+            animatedSprite.FlipH = true;
         }
 
         if (Input.IsActionPressed("ui_right"))
         {
             direction ++;
-            GetNode<AnimatedSprite>("AnimatedSprite").FlipH = false;
+            animatedSprite.FlipH = false;
         }
 
         if (direction != 0) {
             velocity.x = Mathf.Lerp(velocity.x, direction * speed, acceleration);
             if (!isInAir) {
-                GetNode<AnimatedSprite>("AnimatedSprite").Play("Run");
+                animatedSprite.Play("Run");
             }
         } else {
             velocity.x = Mathf.Lerp(velocity.x, 0, friction);
             if (!isInAir) {
-                GetNode<AnimatedSprite>("AnimatedSprite").Play("Idle");
+                animatedSprite.Play("Idle");
             }
         }
     }
@@ -169,12 +171,12 @@ public class PlayerControler : KinematicBody2D
             velocity.y = -jumpHeight;
             velocity.x = jumpHeight;
             isWallJumping = true;
-            GetNode<AnimatedSprite>("AnimatedSprite").FlipH = false;
+            animatedSprite.FlipH = false;
         } else if(Input.IsActionJustPressed("jump") && GetNode<RayCast2D>("RayCast2dRight").IsColliding()) {
             velocity.y = -jumpHeight;
             velocity.x = -jumpHeight;
             isWallJumping = true;
-            GetNode<AnimatedSprite>("AnimatedSprite").FlipH = true;
+            animatedSprite.FlipH = true;
         }
 
         if (isWallJumping) {
