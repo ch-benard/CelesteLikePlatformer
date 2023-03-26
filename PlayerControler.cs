@@ -156,7 +156,7 @@ public class PlayerControler : KinematicBody2D
             velocity.y = -dashSpeed;
             isDashing = true;
             }
-            if (Input.IsActionPressed("ui_leftt") && Input.IsActionPressed("ui_up")) {
+            if (Input.IsActionPressed("ui_left") && Input.IsActionPressed("ui_up")) {
             velocity.x = -dashSpeed;
             velocity.y = -dashSpeed;
             isDashing = true;

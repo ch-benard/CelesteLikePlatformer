@@ -20,7 +20,11 @@ public class GhostPlayer : Node2D
 //      
 //  }
 
-public void SetHValue(bool value) {
-    GetNode<Sprite>("Sprite").FlipH = value;
-}
+    public void SetHValue(bool value) {
+        GetNode<Sprite>("Sprite").FlipH = value;
+    }
+
+    public void Destroy() {
+        QueueFree();
+    }
 }
